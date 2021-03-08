@@ -1,0 +1,71 @@
+<p>Saisie du compte client</p>
+
+<p>
+    <label for="nom">Nom</label> : 
+    <input id="nom" [appError]="validationnom ()" [(ngModel)]="nom">  
+</p>
+<p>
+    <label for="prenom">Prénom</label> : 
+    <input id="prenom" [appError]="validationprenom ()" [(ngModel)]="prenom">
+</p>
+<p>
+    <label for="prenom">Adresse</label> : 
+    <input id="adresse" [appError]="validationadresse ()" [(ngModel)]="adresse">
+</p>
+<p>
+    <label for="cp">Code postal</label> : 
+    <input id="cp" [appError]="validationcp ()" [(ngModel)]="cp">
+</p>
+<p>
+    <label for="ville">Ville</label> : 
+    <input id="ville" [appError]="validationville ()" [(ngModel)]="ville">
+</p>
+<p>
+    <label for="tel">Téléphone</label> : 
+    <input id="tel" [appError]="validationtel ()" [(ngModel)]="tel">
+</p>
+<p>
+    <label for="email">Email</label> : 
+    <input id="email" [appError]="validationemail ()" [(ngModel)]="email">
+</p>
+<p>
+    <label for="civilite">Civilité</label> : 
+    <input id="civilite" [appError]="validationcivilite ()" [(ngModel)]="civilite">
+</p>
+<p>
+    <label for="pays">Pays</label> : 
+    <input id="pays" [appError]="validationpays ()" [(ngModel)]="pays">  
+</p>
+<p>
+    <label for="login">Login</label> : 
+    <input id="login" [appError]="validationlogin ()" [(ngModel)]="login">  
+</p>
+<p>
+    <label for="mdp">Mot de passe</label> : 
+    <input id="mdp" [appError]="validationmdp ()" [(ngModel)]="mdp">  
+</p>
+
+
+<hr/>
+ 
+<p>Nom : {{nom | uppercase}} </p>
+<p>Prénom : {{prenom | uppercase}}</p>
+<p>Adresse : {{adresse | uppercase}}</p>
+<p>Code postal : {{cp | uppercase}}</p>
+<p>Ville : {{ville | uppercase}}</p>
+<p>Téléphone : {{tel | verifphone}}</p>
+<p>Email : {{email}}</p>
+<p>Civilité : {{civilite}}</p>
+<p>Pays : {{pays | uppercase}}</p>
+<p>Login : {{login}}</p>
+<p>Mot de passe : {{mdp}}</p>
+
+
+
+
+    
+
+
+
+
+
